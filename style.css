@@ -1,0 +1,49 @@
+*  {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+
+#ok  {
+    width: 100%;
+}
+input[type="text"]  {
+    width: 70%;
+}
+
+#saudacoes  {
+    text-align: center;
+}
+
+.jogadores  {
+    display: flex;
+    gap: 3rem;
+}
+.jogadores div  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#erro1, #erro2  {
+    display: none;
+}
+
+button#reiniciar  {
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da adivinhação</title>
+</head>
+<body onload="carregarPagina()">
+    <section>
+        <h1>Jogo da sorte</h1>
+        <div id="inserirNome">
+            <p id="saudacoes">Olá jogadores, insiram o vosso nome.<br>Um de vós deve clicar em OK para começar o jogo</p>
+            <p class="jogador">Jogador 1: <input type="text" name="jogador" id="jogador1" placeholder="Insira o seu nome"></p>
+            <p class="jogador">Jogador 2: <input type="text" name="jogador" id="jogador2" placeholder="Insira o seu nome"></p>
+            <button id="ok">OK</button>
+        </div>
+        <p id="aleatorio"></p>
+        <button id="btn">Gerar número</button>
+        <div class="jogadores">
+            <div>
+                <h2 id="jog1">Jogador 1</h2>
+                <input type="number" name="num1" id="num1" min="1" max="9" placeholder="Número 1 à 9">
+                <p id="pontosJog1">Pontos: 0</p>
+            </div>
+            <div>
+                <h2 id="jog2">Jogador 2</h2>
+                <input type="number" name="num2" id="num2" min="1" max="9" placeholder="Número 1 à 9">
+                <p id="pontosJog2">Pontos: 0</p>
+            </div>
+        </div>
+        <p id="mensagem"></p>
+        <!--Botão que reseta tudo-->
+        <button id="reiniciar">Começar nova rodada</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
