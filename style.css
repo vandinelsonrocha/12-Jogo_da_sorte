@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    border: 1px solid violet;
 }
 
 section  {
@@ -20,6 +23,11 @@ section  {
 input[type="text"]  {
     width: 70%;
 }
+/*
+.verde {
+    border: 1px solid green;
+}
+*/
 
 #saudacoes  {
     text-align: center;

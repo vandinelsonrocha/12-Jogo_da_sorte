@@ -10,10 +10,12 @@
 <body onload="carregarPagina()">
     <section>
         <h1>Jogo da sorte</h1>
+        <p><!--Implementar relógio--></p>
         <div id="inserirNome">
             <p id="saudacoes">Olá jogadores, insiram o vosso nome.<br>Um de vós deve clicar em OK para começar o jogo</p>
             <p class="jogador">Jogador 1: <input type="text" name="jogador" id="jogador1" placeholder="Insira o seu nome"></p>
             <p class="jogador">Jogador 2: <input type="text" name="jogador" id="jogador2" placeholder="Insira o seu nome"></p>
+            <p id="nomes-iguais"></p>
             <button id="ok">OK</button>
         </div>
         <p id="aleatorio"></p>
@@ -31,10 +33,28 @@
                 <p id="pontosJog2">Pontos: 0</p>
             </div>
         </div>
+
         <p id="mensagem"></p>
+
         <!--Botão que reseta tudo-->
         <button id="nova-rodada">Começar nova rodada</button>
+
         <button id="terminar-jogo"><a href="fim_jogo.html" target="_self">Terminar jogo</a></button>
+
+        <button id="regras-jogo">Regras</button>
+        <div id="regras">
+            <h3>Regras do jogo</h3>
+            <ol>
+                <li>Cada jogador deve digitar o seu nome antes de começar o jogo</li>
+                <li>Os nomes devem ser diferentes</li>
+                <li>Devem indicar um número inteiro entre 1 e 9 antes de gerar o número da sorte</li>
+                <li>Podem ou não alterar os números antes de gerar, desde que indiquem pelo menos uma vez</li>
+                <li>O jogador que atingir primeiro 5 pontos, vence a rodada</li>
+                <li>Devem sempre iniciar nova rodada quando uma termina</li>
+                <li>O jogo só acaba quando um dos jogadores clicar para o fim do jogo</li>
+            </ol>
+            <button id="esconder-regras">OK</button>
+        </div>
     </section>
 
     <script src="script.js"></script>
