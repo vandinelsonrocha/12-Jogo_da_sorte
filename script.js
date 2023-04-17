@@ -126,10 +126,10 @@ function carregarPagina()  {
         //Condiçoes verificadas, agora começar a gerar o número:
         else if(document.getElementById('inserirNome').style.display == "none" && numero1.value && numero2.value)  {
             mensagem.textContent = "";
-            if(pontosJog1.value <=2 && pontosJog2.value <= 2)  {
+            if(pontosJog1.value <=5 && pontosJog2.value <= 5)  {
                 numAleatorio.innerHTML = `${numGerado}`;
             }
-            if(numero1.value == numGerado && numero2.value == numGerado && pontosJog1.value <= 2 && pontosJog2.value <= 2)  {
+            if(numero1.value == numGerado && numero2.value == numGerado && pontosJog1.value <= 5 && pontosJog2.value <= 5)  {
                 mensagem.textContent = "Parabéns jogadores!";
 
                 pontosJog1.textContent = `Pontos: ${pontosJog1.value}`;
@@ -138,48 +138,48 @@ function carregarPagina()  {
                 pontosJog2.value++;
 
                 //Empate na rodada
-                if(pontosJog1.value == 3 && pontosJog2.value == 3)  {
+                if(pontosJog1.value == 6 && pontosJog2.value == 6)  {
                     mensagem.textContent = "Empate nesta rodada!";
                     novaRodada.style.display = "block";
                     terminarJogo.style.display = "block";
                 }
-                //--------------------------------------LIMPAR NUMGERADO E MENSAGEM AQUI----------------------------------------
+                
                 novaRodada.addEventListener('click', function()  {
                     novaRodada.style.display = "none";
                     numAleatorio.textContent = "";
                     mensagem.textContent = "";
                 });
             }
-            else if(numero1.value == numGerado && numero2.value != numGerado && pontosJog1.value <= 2)  {
-                if(pontosJog2.value != 3)  {
+            else if(numero1.value == numGerado && numero2.value != numGerado && pontosJog1.value <= 5)  {
+                if(pontosJog2.value != 6)  {
                     pontosJog1.textContent = `Pontos: ${pontosJog1.value}`;
                     pontosJog1.value++;
                 }
                 //Jogador 1 vence a rodada
-                if(pontosJog1.value == 3 && pontosJog2.value != 3)  {
+                if(pontosJog1.value == 6 && pontosJog2.value != 6)  {
                     mensagem.textContent = `Parabéns ${jogador1.value}, você venceu esta rodada!`;
                     novaRodada.style.display = "block";
                     terminarJogo.style.display = "block";
                 }
-                //--------------------------------------LIMPAR NUMGERADO E MENSAGEM AQUI----------------------------------------
+
                 novaRodada.addEventListener('click', function()  {
                     novaRodada.style.display = "none";
                     numAleatorio.textContent = "";
                     mensagem.textContent = "";
                 });
             }
-            else if(numero1.value != numGerado && numero2.value == numGerado && pontosJog2.value <= 2)  {
-                if(pontosJog1.value != 3)  {
+            else if(numero1.value != numGerado && numero2.value == numGerado && pontosJog2.value <= 5)  {
+                if(pontosJog1.value != 6)  {
                     pontosJog2.textContent = `Pontos: ${pontosJog2.value}`;
                     pontosJog2.value++;
                 }
                 //Jogador 2 vence a rodada
-                if(pontosJog2.value == 3 && pontosJog1.value != 3)  {
+                if(pontosJog2.value == 6 && pontosJog1.value != 6)  {
                     mensagem.textContent = `Parabéns ${jogador2.value}, você venceu esta rodada!`;
                     novaRodada.style.display = "block";
                     terminarJogo.style.display = "block";
                 }
-                //--------------------------------------LIMPAR NUMGERADO E MENSAGEM AQUI----------------------------------------
+
                 novaRodada.addEventListener('click', function()  {
                     novaRodada.style.display = "none";
                     numAleatorio.textContent = "";
@@ -193,7 +193,7 @@ function carregarPagina()  {
         rodada.textContent = `Rodada ${numRodadas}`;
         numRodadas++;
         novaRodada.style.display = "none";
-        //------------------pontos, mensagem e num gerado tem que resetar----------------------
+
         pontosJog1.value = 0;  
         pontosJog1.textContent = `Pontos: ${pontosJog1.value}`;
         pontosJog1.value ++;
@@ -218,10 +218,3 @@ function carregarPagina()  {
         document.getElementById('regras').style.display = 'none';
     });
 }
-
-
-/*
-FALTA IMPLEMENTAR:
-2 - funcionalidade botão Terminar jogo (falta só inserir o conteúdo da página)
-3 - temporizador de jogo (será q nn fica para outro projeto?)
-*/

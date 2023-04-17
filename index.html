@@ -10,11 +10,10 @@
 <body onload="carregarPagina()">
     <section>
         <h1>Jogo da sorte</h1>
-        <p><!--Implementar relógio--></p>
         <div id="inserirNome">
             <p id="saudacoes">Olá jogadores, insiram o vosso nome.<br>Um de vós deve clicar em OK para começar o jogo</p>
-            <p class="jogador">Jogador 1: <input type="text" name="jogador" id="jogador1" placeholder="Insira o seu nome"></p>
-            <p class="jogador">Jogador 2: <input type="text" name="jogador" id="jogador2" placeholder="Insira o seu nome"></p>
+            <p class="jogador jogar1"><label for="jogador1">Jogador 1:</label> <input type="text" name="jogador" id="jogador1" placeholder="Insira o seu nome"></p>
+            <p class="jogador jogar2"><label for="jogador2">Jogador 2:</label> <input type="text" name="jogador" id="jogador2" placeholder="Insira o seu nome"></p>
             <p id="nomes-iguais"></p>
             <button id="ok">OK</button>
         </div>
@@ -32,7 +31,7 @@
                 <input type="number" name="num2" id="num2" min="1" max="9" placeholder="Número 1 à 9">
                 <p id="pontosJog2">Pontos: 0</p>
             </div>
-        </div>
+        </div> 
 
         <p id="mensagem"></p>
 
