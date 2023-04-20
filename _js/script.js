@@ -130,7 +130,6 @@ function carregarPagina()  {
                 numAleatorio.innerHTML = `${numGerado}`;
             }
             if(numero1.value == numGerado && numero2.value == numGerado && pontosJog1.value <= 5 && pontosJog2.value <= 5)  {
-                mensagem.textContent = "Parabéns jogadores!";
 
                 pontosJog1.textContent = `Pontos: ${pontosJog1.value}`;
                 pontosJog1.value++;
@@ -139,6 +138,7 @@ function carregarPagina()  {
 
                 //Empate na rodada
                 if(pontosJog1.value == 6 && pontosJog2.value == 6)  {
+                    mensagem.style.color = "green";
                     mensagem.textContent = "Empate nesta rodada!";
                     novaRodada.style.display = "block";
                     terminarJogo.style.display = "block";
@@ -157,6 +157,7 @@ function carregarPagina()  {
                 }
                 //Jogador 1 vence a rodada
                 if(pontosJog1.value == 6 && pontosJog2.value != 6)  {
+                    mensagem.style.color = "green";
                     mensagem.textContent = `Parabéns ${jogador1.value}, você venceu esta rodada!`;
                     novaRodada.style.display = "block";
                     terminarJogo.style.display = "block";
@@ -175,6 +176,7 @@ function carregarPagina()  {
                 }
                 //Jogador 2 vence a rodada
                 if(pontosJog2.value == 6 && pontosJog1.value != 6)  {
+                    mensagem.style.color = "green";
                     mensagem.textContent = `Parabéns ${jogador2.value}, você venceu esta rodada!`;
                     novaRodada.style.display = "block";
                     terminarJogo.style.display = "block";

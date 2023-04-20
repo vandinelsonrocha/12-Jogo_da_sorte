@@ -37,6 +37,10 @@ p.jogador  {
     font-weight: 600;
 }
 
+#nomes-iguais  {
+    color: #f73d3d;
+}
+
 input[type="text"]  {
     padding: 5px;
     width: calc(100% - 21.9%);
@@ -59,6 +63,13 @@ section > div > button#ok:hover  {
 button  {
     cursor: pointer;
 }
+
+#aleatorio  {
+    font-weight: bolder;
+    font-weight: 25px;
+    color: rebeccapurple;
+}
+
 button#btn  {
     padding: 6px 13px;
     margin-top: 1rem;
@@ -100,6 +111,31 @@ p#rodada  {
     padding: 4px 0;
     border: 1px solid #C0C0C0;
     padding-left: 6px;
+}
+
+#mensagem  {
+    color: #f73d3d;
+    margin: .7rem 0;
+}
+
+#nova-rodada  {
+    background-color: rgb(14, 179, 14);
+    color: #FFF;
+    font-weight: 700;
+    padding: .4rem .8rem;
+    border-radius: 5px;
+    margin-bottom: .9rem;
+}
+
+#terminar-jogo  {
+    background-color: #f73d3d;
+    font-weight: 700;
+    padding: .4rem .8rem;
+    border-radius: 5px;
+    margin-bottom: .7rem;
+}
+#terminar-jogo a  {
+    color: #FFF;
 }
 
 button#regras-jogo  {
