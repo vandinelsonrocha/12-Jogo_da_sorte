@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="_css/reset.css">
+    <link rel="stylesheet" href="_css/style.css">
     <title>Jogo da sorte</title>
 </head>
 <body onload="carregarPagina()">
@@ -42,7 +43,7 @@
 
         <button id="regras-jogo">Regras</button>
         <div id="regras">
-            <h3>Regras do jogo</h3>
+            <h3>Regras do jogo:</h3>
             <ol>
                 <li>Cada jogador deve digitar o seu nome antes de começar o jogo</li>
                 <li>Os nomes devem ser diferentes</li>
@@ -52,10 +53,12 @@
                 <li>Devem sempre iniciar nova rodada quando uma termina</li>
                 <li>O jogo só acaba quando um dos jogadores clicar para o fim do jogo</li>
             </ol>
-            <button id="esconder-regras">OK</button>
+            <div>
+                <button id="esconder-regras">OK</button>
+            </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="_js/script.js"></script>
 </body>
 </html>

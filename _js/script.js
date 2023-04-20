@@ -26,37 +26,37 @@ function carregarPagina()  {
 
     jogador1.addEventListener('input', function()  {
         if(this.value.length > 0)  {
-            this.style.border = "1px solid green";
+            this.style.border = "1.5px solid green";
         }
         else  {
-            this.style.border = "1px solid red";
+            this.style.border = "1.5px solid red";
         }
     });
 
     jogador2.addEventListener('input', function()  {
         if(this.value.length > 0)  {
-            this.style.border = "1px solid green";
+            this.style.border = "1.5px solid green";
         }
         else  {
-            this.style.border = "1px solid red";
+            this.style.border = "1.5px solid red";
         }
     });
 
     numero1.addEventListener('input', function()  {
         if(this.value.length > 0)  {
-            this.style.border = "1px solid green";
+            this.style.border = "1.5px solid green";
         }
         else  {
-            this.style.border = "1px solid red";
+            this.style.border = "1.5px solid red";
         }
     });
 
     numero2.addEventListener('input', function()  {
         if(this.value.length > 0)  {
-            this.style.border = "1px solid green";
+            this.style.border = "1.5px solid green";
         }
         else  {
-            this.style.border = "1px solid red";
+            this.style.border = "1.5px solid red";
         }
     });
 
@@ -68,14 +68,14 @@ function carregarPagina()  {
         let jog2 = document.getElementById('jog2');
 
         if(jogador1.value.length == "" && jogador2.value.length == "")  {
-            jogador1.style.border = "1px solid red";
-            jogador2.style.border = "1px solid red";
+            jogador1.style.border = "1.5px solid red";
+            jogador2.style.border = "1.5px solid red";
         }
         else if(jogador1.value.length == "" && !(jogador2.value.length == ""))  {
-            jogador1.style.border = "1px solid red";
+            jogador1.style.border = "1.5px solid red";
         }
         else if(!(jogador1.value.length == "") && jogador2.value.length == "")  {
-            jogador2.style.border = "1px solid red";
+            jogador2.style.border = "1.5px solid red";
         }
         else if(jogador1.value == jogador2.value)  {
             document.getElementById('nomes-iguais').textContent = "Os nomes devem ser diferentes.";
@@ -101,24 +101,24 @@ function carregarPagina()  {
         mensagem.textContent = "";
 
         if(jogador1.value.length == "" && jogador2.value.length == "")  {
-            jogador1.style.border = "1px solid red";
-            jogador2.style.border = "1px solid red";
+            jogador1.style.border = "1.5px solid red";
+            jogador2.style.border = "1.5px solid red";
         }
         else if(jogador1.value && jogador2.value.length == "")  {
-            jogador2.style.border = "1px solid red";
+            jogador2.style.border = "1.5px solid red";
         }
         else if(jogador1.value.length == "" && jogador2.value)  {
-            jogador1.style.border = "1px solid red";
+            jogador1.style.border = "1.5px solid red";
         }
         else if(document.getElementById('inserirNome').style.display == "none" && numero1.value.length == "" && numero2.value.length == "")  {
-            numero1.style.border = "1px solid red";
-            numero2.style.border = "1px solid red";
+            numero1.style.border = "1.5px solid red";
+            numero2.style.border = "1.5px solid red";
         }
         else if(document.getElementById('inserirNome').style.display == "none" && numero1.value && numero2.value.length == "")  {
-            numero2.style.border = "1px solid red";
+            numero2.style.border = "1.5px solid red";
         }
         else if(document.getElementById('inserirNome').style.display == "none" && numero1.value.length == "" && numero2.value)  {
-            numero1.style.border = "1px solid red";
+            numero1.style.border = "1.5px solid red";
         }
         else if(numero1.value<1 || numero1.value>9 || numero2.value<1 || numero2.value>9)  {
             mensagem.textContent = "Ambos os números devem ser entre 1 e 9";

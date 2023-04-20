@@ -1,0 +1,73 @@
+body > div#fim-jogo  {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .450);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    transition: .7s;
+}
+body > div#fim-jogo:hover  {
+    background-color: rgba(128,128,128,.1);
+}
+
+div#fim-jogo > h1:first-of-type  {
+    font-size: 1em;
+}
+
+
+div#fim-jogo > div > img:nth-child(1)  {
+    width: 35%;
+    height: 40%;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+div#fim-jogo > div:nth-child(2)  {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#fim-jogo > div > div:last-of-type  {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.sobre  {
+    display: flex;
+    flex: 1 0 0;
+}
+
+#redes-sociais  {
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 2rem;
+}
+#redes-sociais a  {
+    font-size: 30px;
+}
+
+ion-icon  {
+    color: #1E90FF;
+    transition: .5s;
+}
+ion-icon:hover  {
+    color: #09437e;
+}
+
+#sobre-mim > p#email  {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    font-size: 18px;
+}
+.icone-email  {
+    transform: translateY(3px);
+}
