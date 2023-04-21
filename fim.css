@@ -66,8 +66,24 @@ ion-icon:hover  {
     display: flex;
     align-items: flex-end;
     gap: 3px;
-    font-size: 18px;
 }
 .icone-email  {
     font-size: 20px;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 600px)  {
+    body > div#fim-jogo  {
+        width: 95%;
+    }
+
+    h1, p.sobre, p#email  {
+        font-size: 12px;
+    } 
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px)  {
+    body > div#fim-jogo  {
+        width: 70%;
+    }
 }
