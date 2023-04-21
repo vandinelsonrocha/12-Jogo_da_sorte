@@ -21,10 +21,8 @@ div#fim-jogo > h1:first-of-type  {
     font-size: 1em;
 }
 
-
 div#fim-jogo > div > img:nth-child(1)  {
     width: 35%;
-    height: 40%;
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
