@@ -121,6 +121,7 @@ function carregarPagina()  {
             numero1.style.border = "1.5px solid red";
         }
         else if(numero1.value<1 || numero1.value>9 || numero2.value<1 || numero2.value>9)  {
+            mensagem.style.color = "red";
             mensagem.textContent = "Ambos os números devem ser entre 1 e 9";
         }
         //Condiçoes verificadas, agora começar a gerar o número:
